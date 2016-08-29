@@ -41,6 +41,15 @@ const profile syntechlfprofile = {
 	}
 };
 
+// RS slow temp LF profile
+const profile lfprofileslow = {
+	"RS LF SLOW", {
+		50, 50, 50, 50, 60, 70, 80, 90,100,110,120,130,140,149,157,165, // 0-150s
+		173,180,187,194,201,208,215,221,227,232,237,240,243,246,240,230,
+                219,212,205,198,191,184,177,157,137,117, 97, 77, 57,  50,  40,  0
+	}
+};
+
 #ifdef RAMPTEST
 // Ramp speed test temp profile
 const profile rampspeed_testprofile = {
@@ -71,6 +80,7 @@ ramprofile ee2 = { "CUSTOM #2" };
 
 const profile* profiles[] = {
 	&syntechlfprofile,
+	&lfprofileslow,
 	&nc31profile,
 	&am4300profile,
 #ifdef RAMPTEST
